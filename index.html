@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="pagestyling.css">
-       
+        <link rel="stylesheet" href="pagestyling.css">  
+        
         
     </head>
     <body>
-        
+        <!--
+        <div class="wrap">
+            <div class="search">
+               <input id="searchbar" onkeyup="search_animal()" type="text" class="searchTerm" placeholder="What are you looking for?">
+               
+            </div>
+        </div>
+        -->
+        <input id="searchbar" onkeyup="search_metadatabox()" type="text"
+        name="search" placeholder="Search Metadata..">
+             
        
-        <main>
+        <main>           
+
+            <li class="metadatabox">Branches
             <!---Metadata Branchers--->
-            <div class="metabox">
+            <div class="metabox" >
                <div class="metadata">
-                    <img id="branches" class="metaimg" src="Images/Transnet_branches.jpg" height="100%" >
+                    <img id="branches" class="metaimg" src="Images/Branches.JPG" height="100%" >
                </div>
                 </br> 
                 <div class="metadata"> 
-                    <h2 class="metadataname">Brachers Metadata</h2>                  
-                    <p class="description">Transnet Branchers Across Southern Africa</p>
+                    <h2 class="metadataname">Braches Metadata</h2>                  
+                    <p class="description">Over the years, the Transnet enterprise has expanded across the country, enabling many business to access efficient and outstanding service delivery.</p>
                 </div> </br> 
                 <div class="metadata">
                     <a class="btn"  href="IsoFiles/Country_branch_Iso.zip" download=""> 
-                        <button>Download</button>
+                        <button class="button">Download</button>
                     </a> 
                    </br></br></br></br></br>                        
                     <a class="btn"  href="IsoFiles/Country_branch_Iso/Countrywide_iso.xml"> 
-                        <button>Preview</button>
+                        <button class="button">Preview</button>
                     </a> 
                 </div>                    
                              
 
-            </div>   
+            </div> 
+            </li>  
             <!---Metadata Customers--->
-            <div class="metabox">
+            <li class="metadatabox">Customers
+            <div class="metabox"  >
                <div class="metadata">
                     <img id="customers" class="metaimg" src="Images/Customers.jpg" height="100%" >
                </div>
                 </br> 
                 <div class="metadata"> 
                     <h2 class="metadataname">Customers Metadata</h2>                  
-                    <p class="description">Customers Location Across Southern Africa</p>
+                    <p class="description">As a service provider to a lot of companies across the country, it makes sense to have a map representing the spatial distribution of Transnet customers in relation to Transnet countrywide branches and the various port utilized by Transnet.</p>
                 </div>                                                           </br> 
                 <div class="metadata">
                     <a class="btn"  href="IsoFiles/Customers_Iso.zip" download=""> 
-                        <button>Download</button>
+                        <button class="button">Download</button>
                     </a> 
                    </br></br></br></br></br>                        
                     <a class="btn"  href="IsoFiles/Customers_Iso/Customers_xm.xml"> 
-                        <button>Preview</button>
+                        <button class="button">Preview</button>
                     </a> 
                 </div>               
                            
             </div>
+        </li>
              <!---Metadata Provinces--->
+             <li class="metadatabox">Provinces
              <div class="metabox">
                 <div class="metadata">
                      <img id="provinces" class="metaimg" src="Images/Provinces.jpg" height="100%" >
@@ -60,20 +76,22 @@
                  </br> 
                  <div class="metadata"> 
                      <h2 class="metadataname">Provinces Metadata</h2>                  
-                     <p class="description">South African Provinces</p>
+                     <p class="description">Various companies in the country utilize Transnet services for the transportation of their goods, both locally and outside the country boarders.</p>
                  </div>                                                           </br> 
                  <div class="metadata">
                      <a class="btn"  href="IsoFiles/Province_Iso.zip" download=""> 
-                         <button>Download</button>
+                         <button class="button">Download</button>
                      </a> 
                     </br></br></br></br></br>                        
                      <a class="btn"  href="IsoFiles/Province_Iso/provinces.xml"> 
-                         <button>Preview</button>
+                         <button class="button">Preview</button>
                      </a> 
                  </div>               
                             
              </div>
+            </li>
              <!---Metadata Railways--->
+             <li class="metadatabox">Railways
              <div class="metabox">
                 <div class="metadata">
                      <img id="railways" class="metaimg" src="Images/Railways.jpg" height="100%" >
@@ -81,61 +99,90 @@
                  </br> 
                  <div class="metadata"> 
                      <h2 class="metadataname">Railways Metadata</h2>                  
-                     <p class="description">Transnet Railways in Southern Africa</p>
+                     <p class="description">Transnet is the leading freight rail enterprise in the country, enabling the transportation of goods like coal to its various customers.</p>
                  </div>                                                           </br> 
                  <div class="metadata">
                      <a class="btn"  href="IsoFiles/Railways_Iso.zip" download=""> 
-                         <button>Download</button>
+                         <button class="button">Download</button>
                      </a> 
                     </br></br></br></br></br>                        
                      <a class="btn"  href="IsoFiles/Railways_Iso/railways_iso.xml"> 
-                         <button>Preview</button>
+                         <button class="button">Preview</button>
                      </a> 
                  </div>               
                             
              </div>
+            </li>
               <!---Metadata Terminal--->
+              <li class="metadatabox">Terminal
             <div class="metabox">
                 <div class="metadata">
-                     <img id="terminal" class="metaimg" src="Images/Terminals_South Africa.jpg" height="100%" >
+                     <img id="terminal" class="metaimg" src="Images/Terminals.JPG" height="100%" >
                 </div>
                  </br> 
                  <div class="metadata"> 
                      <h2 class="metadataname">Terminals Metadata</h2>                  
-                     <p class="description">Transnet Port and Train Terminal across Southern Africa</p>
+                     <p class="description">The ability to switch between land and sea transportation of goods is one of the key factors contributing to the success of Transnet. The various terminals across the country broaden Transnet's customer base as business is not constrained to the country boarders.</p>
                  </div>                                                           </br> 
                  <div class="metadata">
                      <a class="btn"  href="IsoFiles/Terminal_Iso.zip" download=""> 
-                         <button>Download</button>
+                         <button class="button">Download</button>
                      </a> 
                     </br></br></br></br></br>                        
                      <a class="btn"  href="IsoFiles/Terminal_Iso/Terminals_iso.xml"> 
-                         <button>Preview</button>
+                         <button class="button">Preview</button>
                      </a> 
                  </div>               
                             
              </div>
+            </li>
               <!---Metadata Towns--->
+              <li class="metadatabox">Towns
             <div class="metabox">
                 <div class="metadata">
-                     <img id="town" class="metaimg" src="Images/Towns_across_SA.jpg" height="100%" >
+                     <img id="town" class="metaimg" src="Images/Towns.jpg" height="100%" >
                 </div>
                  </br> 
                  <div class="metadata"> 
                      <h2 class="metadataname">Towns Metadata</h2>                  
-                     <p class="description">South African towns across provinces</p>
+                     <p class="description">Towns across South Africa enabling customers to better orient themselves in relation to the location of the various Transnet branches.</p>
                  </div> </br> 
                  <div class="metadata">
                      <a class="btn"  href="IsoFiles/Towns_Iso.zip" download=""> 
-                         <button>Download</button>
+                         <button class="button">Download</button>
                      </a> 
                     </br></br></br></br></br>                        
                      <a class="btn"  href="IsoFiles/Towns_Iso/Towns_iso.html.xml"> 
-                         <button>Preview</button>
+                         <button class="button">Preview</button>
                      </a> 
                  </div>               
                             
             </div>
+        </li>
+
+             <!---Metadata Roads--->
+             <li class="metadatabox">Roads
+            <div class="metabox">
+                <div class="metadata">
+                     <img id="roads" class="metaimg" src="Images/Roads.JPG" height="100%" >
+                </div>
+                 </br> 
+                 <div class="metadata"> 
+                     <h2 class="metadataname">Roads Metadata</h2>                  
+                     <p class="description">South African and Lesotho road shapefiles depicting the network of routes utilized by vehicles including Transnet trucks.</p>
+                 </div> </br> 
+                 <div class="metadata">
+                     <a class="btn"  href="IsoFiles/Roads_Iso.zip" download=""> 
+                         <button class="button">Download</button>
+                     </a> 
+                    </br></br></br></br></br>                        
+                     <a class="btn"  href="IsoFiles/Roads_Iso/roads.xml"> 
+                         <button class="button">Preview</button>
+                     </a> 
+                 </div>               
+                            
+            </div>
+             </li>
 
 
             <!--Modal Image Showing Zoom-->
@@ -155,6 +202,9 @@
         </main>   
         
         <script src="scripting.js"></script>  
+
+
+
 
     </body>
 </html>

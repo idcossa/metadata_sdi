@@ -1,6 +1,6 @@
 body{
     background-color: #000000;
-    background-image: url(Images/BlackMap.jpg);
+    /*background-image: url(Images/Provinces.jpg);*/
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -25,7 +25,7 @@ body{
     padding: 5px;
 
 }
-button{
+.button{
     height: 50px;
     width: 300px;
     float: right;
@@ -35,7 +35,7 @@ button{
     margin-bottom: 5%;
     border: green 2px solid;   
 }
-button:hover{
+.button:hover{
     background-color: gray;
 }
 .metaimg{
@@ -134,3 +134,81 @@ button:hover{
 
 
 
+/*///////////////////////////////////SEARCH/////////////////////*//*
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+Resize the wrap to see the search bar change
+.wrap{
+  width: 30%;
+  position: relative;  
+ margin-right: auto;
+ margin-left: auto;
+  
+}
+
+*/
+
+/*////////////SEARC 2///////////*/
+#searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
+
+ #list{
+   font-size:  1.5em;
+   margin-left: 90px;
+  }
+
+.metadatabox{
+  display: list-item;
+  color: transparent;
+  list-style-type: none;
+      
+ } 
